@@ -1349,7 +1349,7 @@ void display()
 			ExplosionAnimation();
 
 			drawText(aircraftX + UserViewRadiusX - 100, aircraftY + UserViewRadiusY - 30, 1, 0.33, 1, GLUT_BITMAP_HELVETICA_12, "Press M to Main Menu");
-			drawText(aircraftX + UserViewRadiusX - 200, aircraftY - UserViewRadiusY + 30, 1, 0.33, 1, GLUT_BITMAP_HELVETICA_12, "by Najmi & Amier & Cindy & Adhwa");
+			drawText(aircraftX + UserViewRadiusX - 200, aircraftY - UserViewRadiusY + 30, 1, 0.33, 1, GLUT_BITMAP_HELVETICA_12, "by Amier");
 
 			// prevent aircraft from going outside map
 		}
@@ -1374,10 +1374,7 @@ void display()
 			gluOrtho2D(-600, 600, -350, 350);
 			drawText(-400, 200, 1, 0, 0, GLUT_BITMAP_9_BY_15, "YOU LOST !");
 			drawText(-400, 50, 1, 0, 0, GLUT_BITMAP_9_BY_15, (std::to_string(totalEnemyAircraftLoaded - allEnemyAircraft.size()) + "/" + std::to_string(totalEnemyAircraftLoaded)) + " enemy aircraft were destroyed");
-			drawText(-400, -170, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "82766 - Najmi");
 			drawText(-400, -200, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "82688 - Amier");
-			drawText(-400, -230, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "83048 - Adwha");
-			drawText(-400, -260, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "83534 - Cindy");
 		}
 		else if (allEnemyAircraft.size() == 0)
 		{
@@ -1386,10 +1383,7 @@ void display()
 			gluOrtho2D(-600, 600, -350, 350);
 			drawText(-400, 200, 0, 1, 0, GLUT_BITMAP_9_BY_15, "YOU WON !");
 			drawText(-400, 50, 0, 1, 0, GLUT_BITMAP_9_BY_15, (std::to_string(totalEnemyAircraftLoaded - allEnemyAircraft.size()) + "/" + std::to_string(totalEnemyAircraftLoaded)) + " enemy aircraft were destroyed");
-			drawText(-400, -170, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "82766 - Najmi");
 			drawText(-400, -200, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "82688 - Amier");
-			drawText(-400, -230, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "83048 - Adwha");
-			drawText(-400, -260, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "83534 - Cindy");
 		}
 		else
 		{
@@ -1404,10 +1398,7 @@ void display()
 
 			drawText(-400, 50, 1, 0, 0, GLUT_BITMAP_9_BY_15, (std::to_string(totalEnemyAircraftLoaded - allEnemyAircraft.size()) + "/" + std::to_string(totalEnemyAircraftLoaded)) + " enemy aircraft were destroyed");
 
-			drawText(-400, -170, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "82766 - Najmi");
 			drawText(-400, -200, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "82688 - Amier");
-			drawText(-400, -230, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "83048 - Adwha");
-			drawText(-400, -260, 1, 0.33, 1, GLUT_BITMAP_9_BY_15, "83534 - Cindy");
 		}
 	}
 
